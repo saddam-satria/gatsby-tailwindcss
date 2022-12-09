@@ -22,19 +22,5 @@ module.exports = {
         path: `${__dirname}/src/assets/images/`,
       },
     },
-    {
-      resolve: `gatsby-plugin-react-redux`,
-      options: {
-        pathToCreateStoreModule: './src/redux/store',
-        serialize: {
-          space: 0,
-          isJSON: true,
-          unsafe: false,
-          ignoreFunction: true,
-        },
-        cleanupOnClient: true,
-        windowKey: '__PRELOADED_STATE__',
-      },
-    },
   ],
 }
