@@ -1,15 +1,8 @@
 import { reducers } from './reducers';
-import { applyMiddleware, compose, createStore } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore } from 'redux';
 
-/**
- *
- * @chromeExtension -> return redux dev tools
- */
-
-const chromeExtension = () => {
-    return process.env.NODE_ENV === "development" && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+const action = (preloadedState) => {
+    return createStore(reducers, preloadedState);
 };
 
-
-export const store = createStore(reducers, compose(applyMiddleware(thunk), chromeExtension()));
+export default action

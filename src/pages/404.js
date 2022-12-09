@@ -1,9 +1,12 @@
 
 import React from 'react'
+import MainLayout from '../layouts/main'
 
 const NotFound = () => {
     return (
-        <div>NotFound</div>
+        <MainLayout>
+            <div>NotFound</div>
+        </MainLayout>
     )
 }
 
