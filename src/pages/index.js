@@ -29,6 +29,13 @@ export default function Home({ data }) {
   )
 }
 
+export const Head = () => (
+  <>
+    <title>Gatsby Tailwindcss Boilerplate</title>
+    <meta name="description" content="Hello World" />
+  </>
+)
+
 
 export const query = graphql`
   query {
