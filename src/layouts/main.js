@@ -8,4 +8,11 @@ const MainLayout = ({ children }) => {
     );
 };
 
+export const Head = () => (
+    <>
+        <title>Hello World</title>
+        <meta name="description" content="Hello World" />
+    </>
+)
+
 export default MainLayout;
